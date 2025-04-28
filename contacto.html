@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - La Absoluta Cabra</title>
+  <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNgc45inYnKwZ_Gr9yFdmgpS4lBtUm_y2Y1g&s" /> <!-- Favicon -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #1f1f1f;
+      color: #f0f0f0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #00b3b3;
+      margin-bottom: 10px;
+    }
+    header .photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNgc45inYnKwZ_Gr9yFdmgpS4lBtUm_y2Y1g&s'); /* Ruta de la foto */
+      background-size: cover;
+      background-position: center;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
+    header .photo:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #00b3b3;
+      font-size: 1.2em;
+      margin: 0 20px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-card {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+    .contact-card h3 {
+      font-size: 1.8em;
+      color: #00b3b3;
+      margin-bottom: 15px;
+    }
+    .contact-card p {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .contact-card .icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .contact-card a {
+      color: #f0f0f0;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.5em;
+      color: #00b3b3;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #bbb;
+    }
+    footer a {
+      color: #00b3b3;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header con nombre y foto -->
+  <header>
+    <a href="index.html">
+      <div class="photo"></div>
+    </a>
+    <h1>La Absoluta Cabra</h1>
+  </header>
+
+  <!-- Navegación -->
+  <nav>
+    <a href="index.html">Volver al Portafolio</a>
+  </nav>
+
+  <!-- Sección de contacto -->
+  <section class="contact-card">
+    <h3>Mi Información de Contacto</h3>
+    
+    <!-- Tarjeta de Gmail -->
+    <p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Gmail_Logo_2020.svg/1024px-Gmail_Logo_2020.svg.png" alt="Gmail" class="icon">
+      <a href="mailto:contacto@tucorreo.com">contacto@tucorreo.com</a> (Gmail personal)
+    </p>
+    <p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google_Gmail_logo_2020.svg" alt="Gmail" class="icon">
+      <a href="mailto:trabajo@tucorreo.com">trabajo@tucorreo.com</a> (Gmail de trabajo)
+    </p>
+
+    <!-- Tarjeta de teléfono -->
+    <p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Phone_icon_%28square%29.svg" alt="Teléfono" class="icon">
+      <a href="tel:+1234567890">+1 (234) 567-890</a> (Teléfono móvil)
+    </p>
+
+    <!-- Tarjeta de Discord -->
+    <p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Discord_logo_2020.svg" alt="Discord" class="icon">
+      <a href="https://discord.gg/tu-servidor" target="_blank">Únete a mi servidor en Discord</a>
+    </p>
+  </section>
+
+  <!-- Enlaces a redes sociales -->
+  <div class="social-links">
+    <a href="https://linkedin.com/in/tuusuario" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2023.png" alt="LinkedIn" width="40" height="40">
+    </a>
+    <a href="https://twitter.com/tuusuario" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_2021.png" alt="Twitter" width="40" height="40">
+    </a>
+    <a href="https://github.com/tuusuario" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="40" height="40">
+    </a>
+    <a href="https://instagram.com/tuusuario" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" width="40" height="40">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>¡Gracias por visitar mi página! Si tienes alguna consulta, no dudes en contactarme.</p>
+  </footer>
+</body>
+</html>

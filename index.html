@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Personal</title>
+  <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNgc45inYnKwZ_Gr9yFdmgpS4lBtUm_y2Y1g&s" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    nav {
+      background-color: #1f1f1f;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-top: 10px;
+    }
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNgc45inYnKwZ_Gr9yFdmgpS4lBtUm_y2Y1g&s');
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.5s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .work {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .work:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00bcd4;
+    }
+
+    .work img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .work a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #00bcd4;
+      color: #121212;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .work a:hover {
+      background-color: #0097a7;
+    }
+
+    .social {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .social a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .social img:hover {
+      transform: scale(1.2);
+    }
+
+    .github-link {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .github-link a {
+      text-decoration: none;
+      background-color: #24292e;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .github-link a:hover {
+      background-color: #000;
+    }
+
+    #sobremi {
+      padding: 40px 20px;
+      background-color: #1c1c1c;
+      border-top: 2px solid #00bcd4;
+    }
+
+    #sobremi h2 {
+      margin-bottom: 15px;
+    }
+
+    /* Estilo para el texto antes de los proyectos */
+    .projects-title {
+      text-align: center;
+      font-size: 2.5em;
+      margin: 50px 0 30px 0;
+      color: #00bcd4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="#portfolio">Proyectos</a>
+    <a href="otros.html">Más sobre mí</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <header>
+    <div class="photo"></div>
+    <h1>La Absoluta Cabra</h1>
+  </header>
+
+  <!-- Texto antes de los proyectos -->
+  <div class="projects-title">
+    <p>Estos son mis proyectos</p>
+  </div>
+
+  <!-- Sección de proyectos -->
+  <section id="portfolio" class="portfolio">
+    <!-- Proyecto 1 -->
+    <div class="work">
+      <img src="anses.png" alt="Proyecto 1">
+      <h3>Anses medicamentos</h3>
+      <p>Es una pagina breve de subida de Información de madicamentos conectada a la base de datos.</p>
+      <a href="https://jledesmaa17.github.io/ANSES-page/" target="_blank">Ver Proyecto</a>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="work">
+      <img src="eventum.jpg" alt="Proyecto 2">
+      <h3>EVENTUM</h3>
+      <p>Pagina de organizacion de eventos que hace todo por vos.</p>
+      <a href="https://eventums.github.io/EVENTUM/" target="_blank">Ver Proyecto</a>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="work">
+      <img src="https://gtamag.com/images/dealer/docktease_gtao_505917.png" alt="Proyecto 3">
+      <h3>Docktease</h3>
+      <p>Pagina de compra venta de barcos para todo amante de los barcos y la navegacion ademas de cierta informacion aperte de otros barcos.</p>
+      <a href="https://jledesmaa17.github.io/docktease/" target="_blank">Ver Proyecto</a>
+    </div>
+
+    <!-- Proyecto 4 -->
+    <div class="work">
+      <img src="estetica.png" alt="Proyecto 4">
+      <h3>Estetica Tortuguitas</h3>
+      <p>Una web para las esteticas pero hecha especificamnete para esta estetica con todo lo que necesitas saber.</p>
+      <a href="https://estetica1.github.io/Julians/" target="_blank">Ver Proyecto</a>
+    </div>
+
+    <!-- Proyecto 5 -->
+    <div class="work">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjORJDTaPU3r9zkDNCEjw6TUW3oEIaOks1A&s" alt="Proyecto 5">
+      <h3>Pagina de Empresa</h3>
+      <p>Pagina para una empresa de videojuegos.</p>
+      <a href="https://www.ubisoft.com/es-mx/" target="_blank">Ver Proyecto</a>
+    </div>
+  </section>
+
+  <!-- Sección más sobre mí -->
+  <section id="sobremi">
+    <h2>Más sobre mí</h2>
+    <p>Soy desarrollador apasionado por la tecnología y la creatividad digital. Me encanta crear proyectos que impacten y ayuden a otros.</p>
+  </section>
+
+  <!-- Redes sociales -->
+  <div class="social" id="contacto">
+    <a href="https://twitter.com/tuusuario" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" />
+    </a>
+    <a href="https://linkedin.com/in/tuusuario" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+    </a>
+    <a href="https://instagram.com/tuusuario" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+    </a>
+  </div>
+
+  <!-- Enlace a GitHub -->
+  <div class="github-link">
+    <a href="https://github.com/tuusuario" target="_blank">Ver en GitHub</a>
+  </div>
+
+</body>
+</html>
+
