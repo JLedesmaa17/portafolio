@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre mí - Ledesma Julián</title>
+  <title>Sobre mí - La Absoluta Cabra</title>
   <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNgc45inYnKwZ_Gr9yFdmgpS4lBtUm_y2Y1g&s" /> <!-- Favicon -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
@@ -85,6 +85,44 @@
       margin-bottom: 20px;
     }
 
+    .skills {
+      margin-top: 40px;
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .skills h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #00b3b3;
+    }
+    .skill-item {
+      margin-bottom: 15px;
+    }
+    .skill-name {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: #f0f0f0;
+    }
+    .skill-bar {
+      width: 100%;
+      height: 10px;
+      background-color: #404040;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .skill-progress {
+      height: 100%;
+      background: linear-gradient(90deg, #00b3b3, #009999);
+      transition: width 0.3s ease;
+    }
+    .skill-level {
+      font-size: 0.9em;
+      color: #bbb;
+      margin-top: 2px;
+    }
+
     .experience {
       margin-top: 40px;
       background-color: #2a2a2a;
@@ -138,7 +176,7 @@
 
   <!-- Header with name, photo, and flag -->
   <header>
-    <h1>Julián Ledesma</h1>
+    <h1>Ledesma Julián</h1>
     <!-- Foto de perfil -->
     <div class="photo"></div>
     <!-- Bandera de Argentina -->
@@ -147,12 +185,12 @@
 
   <!-- Sección de Lenguajes de programación -->
   <section class="languages">
-    <img src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png" title="Python">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTctQmj1y8wEa_6EJ9mizfcxs-cQ1tAOa8e-g&s" alt="HTML" title="HTML">
-    <img src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo.png" alt="CSS" title="CSS">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png?20180502235434" alt="PHP" title="PHP">
-    <img src="https://1000marcas.net/wp-content/uploads/2020/11/Java-logo.png" alt="Java" title="Java">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt_sEn24GdlhKqI6zd0n6X4lbfVJlhN8l92w&s" alt="JavaScript" title="JavaScript">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/512px-Python-logo-notext.svg.png" alt="Python" title="Python">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="HTML" title="HTML">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS" title="CSS">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Php_logo.svg/600px-Php_logo.svg.png" alt="PHP" title="PHP">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Java_logo_and_wordmark.svg" alt="Java" title="Java">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" alt="JavaScript" title="JavaScript">
   </section>
 
   <!-- About me section -->
@@ -170,11 +208,81 @@
     </p>
   </section>
 
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h3>Habilidades Técnicas</h3>
+    
+    <div class="skill-item">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 85%;"></div>
+      </div>
+      <div class="skill-level">Avanzado - 3+ años de experiencia</div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-name">HTML5</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 90%;"></div>
+      </div>
+      <div class="skill-level">Experto - Estructura semántica y accesibilidad</div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-name">CSS3</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 88%;"></div>
+      </div>
+      <div class="skill-level">Avanzado - Flexbox, Grid, animaciones</div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-name">PHP</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 75%;"></div>
+      </div>
+      <div class="skill-level">Intermedio-Avanzado - Laravel, APIs REST</div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 70%;"></div>
+      </div>
+      <div class="skill-level">Intermedio - Django, automatización</div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-name">Java</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 65%;"></div>
+      </div>
+      <div class="skill-level">Intermedio - POO, Spring Boot básico</div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-name">React</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 80%;"></div>
+      </div>
+      <div class="skill-level">Avanzado - Hooks, Context API, Redux</div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-name">Node.js</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 78%;"></div>
+      </div>
+      <div class="skill-level">Avanzado - Express, MongoDB, APIs</div>
+    </div>
+  </section>
+
   <!-- Experience section -->
   <section class="experience" id="experiencia">
     <h3>Títulos y Experiencia</h3>
     <ul>
-      <li><strong>Licenciatura en Ciencias de la Computación</strong> - Escuela técnica N°3 </li>
+      <li><strong>Licenciatura en Ciencias de la Computación</strong> - Universidad de la Tecnología (2019)</li>
+      <li><strong>Certificado en Desarrollo Web Full Stack</strong> - Codecademy (2020)</li>
       <li><strong>3+ años de experiencia en desarrollo frontend y backend</strong> trabajando con equipos ágiles y realizando proyectos a medida.</li>
       <li><strong>Freelancer</strong> trabajando en una variedad de proyectos web, desde sitios de comercio electrónico hasta aplicaciones SaaS.</li>
       <li><strong>Contribuciones a proyectos Open Source</strong> en GitHub, ayudando a otros desarrolladores a mejorar el código y la documentación.</li>
@@ -187,5 +295,4 @@
   </footer>
 </body>
 </html>
-
 
